@@ -8,6 +8,8 @@
 
     <!-- Bootswatch Litera CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/litera/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
 
     {% if title %}
     <title>Flask Blog - {{ title }}</title>
@@ -19,7 +21,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">techInterest</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
             aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,13 +33,13 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Neural Networks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Python</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Hire Me</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -47,10 +49,20 @@
         </div>
     </nav>
 
+    <main>
     {% block content %}{% endblock %}
+    </main>
 
-    <footer class="bg-light">
-        <h1>This is the footer</h1>
+    <footer class="container bg-light">
+        <div class="row footer-row justify-content-around">
+            <div class="col-1"><i class="fab fa-facebook"></i></div>
+            <div class="col-1"><i class="fab fa-github"></i></div>
+            <div class="col-1"><i class="fab fa-linkedin"></i></div>
+        </div>
+        <div class="row justify-content-center footer-row bg-light">
+            <p>Designed and built by Rory Lindsay</p>
+        </div>
+
     </footer>
 
 

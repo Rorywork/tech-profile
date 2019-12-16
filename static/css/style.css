@@ -1,0 +1,18 @@
+body{
+    font-weight: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    height: 85vh;
+}
+
+.fab{
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer{
+    padding-top: 20px;
+    border: 2px solid black;
+}
