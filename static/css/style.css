@@ -3,10 +3,6 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-main{
-    height: 85vh;
-}
-
 .fab{
     font-size: 2rem;
     text-align: center;
@@ -15,4 +11,19 @@ main{
 footer{
     padding-top: 20px;
     border: 2px solid black;
+}
+
+.blog-post{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blog-post:hover{
+    background-color: rgb(249, 249, 249);
+}
+
+.blog-image{
+    height: 300px;
 }
